@@ -869,6 +869,23 @@ details summary {
   list-style: none; 
 }
 
+details summary::before,
+details summary::after {
+  content: none !important;
+}
+
+details summary::before,
+details summary::after {
+  display: none !important;
+}
+
+button, select {
+  appearance: none;
+  -moz-appearance: none;
+  -webkit-appearance: none;
+
+}
+
 details summary::-webkit-details-marker {
   display: none; /* za Chrome, Safari, Edge */
 }
