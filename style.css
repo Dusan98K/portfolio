@@ -121,6 +121,8 @@ section {
     justify-content: flex-start;
 }
 
+
+
 .main-content h4 {
     font-size: 1.6rem;
     font-weight: 550;
@@ -535,10 +537,6 @@ color: var(--other-color);
   .footer {
       padding: 18px 5%;
   }
-  /*.hero {
-      height: 90vh;
-      background-position: center; 
-  }*/
 }
 
 @media (max-width:1290px){
@@ -582,8 +580,7 @@ color: var(--other-color);
     --h1-font:3.5rem;
   }
   .social {
-    margin-bottom: 20px;
-      
+    margin-bottom: 20px;    
   }
   #menu-icon{
     display: block;
@@ -612,6 +609,10 @@ color: var(--other-color);
   .main-content p {
     width: 100%;
   }  
+  .hero {
+    background: url(./img/bcg5.png), linear-gradient(to right, rgba(255, 255, 255, 0) 50%, rgba(255, 255, 255, 1) 100%);;
+    background-position: center right; 
+  }
 }
 
 @media (max-width:470px) {
@@ -862,6 +863,14 @@ label::after {
 
 details {
   background-color: var(--second-bg-color);
+}
+
+details summary {
+  list-style: none; 
+}
+
+details summary::-webkit-details-marker {
+  display: none; /* za Chrome, Safari, Edge */
 }
 
 .arrow {
