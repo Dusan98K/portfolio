@@ -283,18 +283,7 @@ header.sticky {
     margin-left: 2.5rem;
     margin-right: 2.5rem;
 }
-/*
-.services-content {
-    display: flex;
-    flex-wrap: wrap;  
-    gap: 4rem;
-    justify-content: space-between;
-    margin-top: 2.2rem;
-    margin-bottom: 2.2rem;
-    margin-left: 3.3rem;
-    margin-right: 3.3rem;
-}
-*/
+
 .exp a {
     color: var(--main-color);
     text-decoration: none;
@@ -305,18 +294,6 @@ header.sticky {
   text-decoration: none;
 }
 
-/*.box {
-    padding: 20px 40px 66px;
-    background: #2d343f;
-    border-radius: 28px;
-    border: 1px solid transparent;
-    box-shadow:  0 0 5px var(--main-color);
-    transition: all .50s ease;
-    cursor: pointer;
-    height: -webkit-fill-available;;
-}*/
-
-/* Box - Obezbeđivanje da raste u visinu u zavisnosti od sadržaja */
 .box {
     padding: 20px 40px 66px;
     background: #2d343f;
@@ -326,20 +303,19 @@ header.sticky {
     transition: all .50s ease;
     cursor: pointer;
     flex-direction: column;
-    justify-content: flex-start; /* Prilagoditi visinu prema sadržaju */
+    justify-content: flex-start;
     width: 100%;
-    min-height: 520px; /* Minimalna visina, ako je potrebno */
-    box-sizing: border-box; /* Garantuje da padding ne pretrči dimenzije */
+    min-height: 520px;
+    box-sizing: border-box; 
 }
 
-/* Box inner content adjustments */
 .box p {
     font-size: var(--p-font);
     font-weight: 400;
     color: var(--other-color);
     line-height: 30px;
     margin-bottom: 20px;
-    word-wrap: break-word; /* Prelamanje dugačkih reči */
+    word-wrap: break-word; 
 }
 
 .box-img {
@@ -358,14 +334,6 @@ header.sticky {
     margin-bottom: 30px;
     text-align: center;
 }
-
-/*.box p {
-    font-size: var(--p-font);
-    font-weight: 400;
-    color: var(--other-color);
-    line-height: 30px;
-    margin-bottom: 20px;
-}*/
 
 .box a {
     display: inline-block;
@@ -650,7 +618,7 @@ color: var(--other-color);
   }  
   .hero {
     height: 90vh;
-    background: url(./img/bcg6.png), linear-gradient(to right, rgba(255, 255, 255, 0) 50%, rgba(255, 255, 255, 1) 100%);;
+    background: url(./img/bcg5.png), linear-gradient(to right, rgba(255, 255, 255, 0) 50%, rgba(255, 255, 255, 1) 100%);;
     background-position: center right; 
   }
 }
@@ -964,17 +932,14 @@ details[open] .arrow {
         flex-direction: column;
         align-items: center;
     }
-
     .box {
-        width: 90%;  /* Box zauzima 90% širine ekrana */
+        width: 90%;  
         padding: 20px;
-        min-height: 250px;  /* Manja minimalna visina na mobilnom */
+        min-height: 250px;  
     }
-
     .box h3 {
         font-size: 24px;
     }
-
     .box p {
         font-size: 16px;
     }
