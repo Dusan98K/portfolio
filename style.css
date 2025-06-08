@@ -295,7 +295,7 @@ header.sticky {
   text-decoration: none;
 }
 
-.box {
+/*.box {
     padding: 20px 40px 66px;
     background: #2d343f;
     border-radius: 28px;
@@ -304,7 +304,31 @@ header.sticky {
     transition: all .50s ease;
     cursor: pointer;
     height: -webkit-fill-available;;
+}*/
+.box {
+    padding: 20px 40px 66px;
+    background: #2d343f;
+    border-radius: 28px;
+    border: 1px solid transparent;
+    box-shadow: 0 0 5px var(--main-color);
+    transition: all .50s ease;
+    cursor: pointer;
+    min-height: 300px; /* Daj minimalnu visinu ako je potrebno */
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start; /* Osiguraj da sadržaj ne izlazi iz okvira */
 }
+
+/* Ovaj deo omogućava da box raste sa sadržajem */
+.box p {
+    font-size: var(--p-font);
+    font-weight: 400;
+    color: var(--other-color);
+    line-height: 30px;
+    margin-bottom: 20px;
+    word-wrap: break-word; /* Osiguraj da se duži tekst prelama umesto izlaska iz okvira */
+}
+
 
 .box-img {
     text-align: center; 
@@ -323,13 +347,13 @@ header.sticky {
     text-align: center;
 }
 
-.box p {
+/*.box p {
     font-size: var(--p-font);
     font-weight: 400;
     color: var(--other-color);
     line-height: 30px;
     margin-bottom: 20px;
-}
+}*/
 
 .box a {
     display: inline-block;
@@ -611,7 +635,7 @@ color: var(--other-color);
   }  
   .hero {
     height: 90vh;
-    background: url(./img/bcg5.png), linear-gradient(to right, rgba(255, 255, 255, 0) 50%, rgba(255, 255, 255, 1) 100%);;
+    background: url(./img/bcg6.png), linear-gradient(to right, rgba(255, 255, 255, 0) 50%, rgba(255, 255, 255, 1) 100%);;
     background-position: center right; 
   }
 }
@@ -918,4 +942,18 @@ details[open] .arrow {
   color: red;
   font-size: 0.9rem;
   margin-top: 0.2rem;
+}
+
+@media screen and (max-width: 600px) {
+    .box {
+        padding: 15px 20px 40px; /* Manji padding na manjim ekranima */
+    }
+
+    .box h3 {
+        font-size: 24px; /* Smanji font h3 na manjim ekranima */
+    }
+
+    .box p {
+        font-size: 16px; /* Smanji veličinu fonta za mobilne uređaje */
+    }
 }
