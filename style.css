@@ -274,6 +274,7 @@ header.sticky {
 }
 
 .center-text h2 {
+    line-height: 55px;
     font-size: var(--h2-font);
     font-weight: 600;
 }
@@ -295,9 +296,9 @@ header.sticky {
 }
 
 .exp-margine a {
-  font-family: Arial;
-  color: var(--main-color);
-  text-decoration: none;
+    font-family: Arial;
+    color: var(--main-color);
+    text-decoration: none;
 }
 
 .box {
@@ -948,6 +949,6 @@ details[open] .arrow {
         font-size: 24px;
     }
     .box p {
-        font-size: 16px;
+        font-size: 17px;
     }
 }
