@@ -17,12 +17,7 @@
 
   --h1-font:4.5rem;
   --h2-font:2.9rem;
-  --p-font:1rem; 
-}
-
-html {
-  font-family: "Montserrat", sans-serif;
-  scroll-behavior: smooth;
+  --p-font:1.1rem; 
 }
 
 #gallery {

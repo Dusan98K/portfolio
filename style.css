@@ -1,11 +1,17 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;500;700&display=swap');
+
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-family: 'Inter',sans-serif;
+    font-family: 'Poppins';
     text-decoration: none;
     list-style: none;
     scroll-behavior: smooth;
+}
+
+p {
+  font-family: Arial, sans-serif;
 }
 
 :root {
@@ -17,7 +23,7 @@
 
 --h1-font:4.5rem;
 --h2-font:2.9rem;
---p-font:1rem; 
+--p-font:1.1rem; 
 }
 
 body {
@@ -69,7 +75,7 @@ span {
 
 .navlist a {
     font-size: var(--p-font);
-    font-weight: 600;
+    font-weight: 500;
     color: var(--other-color);
     margin-left: 40px;
     transition: all .50s ease;
@@ -253,10 +259,8 @@ header.sticky {
 }
 
 .exp-area p {
-    color: var(--text-color);
-    font-weight: 600;
-    font-size: 19px;
-    line-height: 42px;
+    font-size: var(--p-font);
+    line-height: 40px;
 }
 
 .exp-area p span {
@@ -552,7 +556,7 @@ color: var(--other-color);
       max-width: 70px;
   }
   .box h3 {
-      font-size: 21px;
+      font-size: 24px;
   }
   .services-content {
     margin-left: 1rem;
