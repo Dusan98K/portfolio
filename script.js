@@ -5,11 +5,19 @@ window.addEventListener("scroll", function() {
 })
 let menu = document.querySelector("#menu-icon");
 let navlist = document.querySelector('.navlist');
+let navlinks = document.querySelectorAll('.navlist a');
 
-menu.onclick = () =>{
-    menu.classList.toggle('bx-x');
-    navlist.classList.toggle('active');
+menu.onclick = () => {
+  menu.classList.toggle('bx-x');
+  navlist.classList.toggle('active');
 }
+
+navlinks.forEach(link => {
+  link.addEventListener('click', () => {
+    navlist.classList.remove('active');
+    menu.classList.remove('bx-x');
+  });
+});
 
 const nameInput = document.getElementById("nameSurname");
 const emailInput = document.getElementById("email");

@@ -89,8 +89,8 @@ span {
 #menu-icon {
     font-size: 35px;
     z-index: 10001;
-cursor: pointer;
-display: none;
+    cursor: pointer;
+    display: none;
 }
 
 .h-btn {
